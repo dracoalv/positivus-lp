@@ -1,0 +1,165 @@
+.component-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 12px;
+}
+
+.component-plus-icon,
+.component-minus-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+
+  background-color: white;
+  border: 1px solid var(--secondary-color);
+  border-radius: 100%;
+}
+
+.component-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.component-link.primary-light > svg circle {
+  fill: var(--light-color);
+}
+
+.component-link.primary-light > svg path {
+  fill: var(--primary-color);
+}
+
+.component-link.primary-dark > svg circle {
+  fill: var(--secondary-color);
+}
+
+.component-link.primary-dark > svg path {
+  fill: var(--primary-color);
+}
+
+/* ### */
+
+.component-link.secondary-white > svg circle {
+  fill: var(--light-color);
+}
+
+.component-link.secondary-white > svg path {
+  fill: var(--secondary-color);
+}
+
+.component-link.light-secondary > svg circle {
+  fill: var(--secondary-color);
+}
+
+.component-link.light-secondary > svg path {
+  fill: var(--light-color);
+}
+
+/* ### */
+
+.component-link.secondary-primary > svg circle {
+  fill: var(--primary-color);
+}
+
+.component-link.secondary-primary > svg path {
+  fill: var(--secondary-color);
+}
+
+.component-link.light-primary > svg circle {
+  fill: var(--primary-color);
+}
+
+.component-link.light-primary > svg path {
+  fill: var(--light-color);
+}
+
+/* ### */
+
+.component-link-simple {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-direction: row-reverse;
+}
+
+.component-link-simple.primary,
+.component-link-simple.primary svg path {
+  color: var(--primary-color);
+  fill: var(--primary-color);
+}
+
+.component-link-simple.secondary,
+.component-link-simple.secondary svg path {
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
+}
+
+.component-link-simple.light,
+.component-link-simple.light svg path {
+  color: var(--light-color);
+  fill: var(--light-color);
+}
+
+/* ### */
+
+button {
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+}
+
+.button {
+  width: fit-content;
+  padding: 20px 32px;
+
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--secondary-color);
+
+  border-radius: 14px;
+}
+
+.button.secondary-primary {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.button.light-secondary {
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+  border: none;
+}
+
+.button.secondary-transparent {
+  color: var(--secondary-color);
+  background-color: transparent;
+}
+
+/* ### */
+
+h2.label {
+  padding: 2px 8px;
+  border-radius: 7px;
+}
+
+h2.label.secondary-primary {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+h2.label.secondary-light {
+  color: var(--secondary-color);
+  background-color: var(--light-color);
+}
+
+h2.label.light-secondary {
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+}
