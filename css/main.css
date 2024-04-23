@@ -33,6 +33,10 @@
   width: 100%;
 }
 
+.logotypes-partners img {
+  filter: brightness(0);
+}
+
 @media screen and (max-width: 768px) {
   .about-section {
     padding: 56px 0;

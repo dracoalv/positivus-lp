@@ -62,10 +62,12 @@ function speakerDynamicSVG() {
   return svgContent
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function renderSpeakerSvg() {
   const svgContainer = document.querySelector('[data-svg="speaker-illustration-container"]');
 
   if (svgContainer) {
     svgContainer.innerHTML = speakerDynamicSVG();
   }
-})
+}
+
+document.addEventListener('DOMContentLoaded', renderSpeakerSvg)
