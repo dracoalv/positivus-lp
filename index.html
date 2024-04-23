@@ -8,10 +8,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/grid.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/main.css">
   <title>Document</title>
 </head>
 <body>
-  
+  <header class="header">
+    <nav class="header-nav grid">
+      <a href="/" class="logotype"><img src="./assets/logotype-dark.svg" alt="Logotipo"></a>
+      <ul class="header-list" data-js="header-list">
+        <li><a href="#about">About us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#use-cases">Use Cases</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#request-a-quote" class="button">Request a quote</a></li>
+      </ul>
+      <button class="header-hamburger" data-js="header-hamburger">
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
+  <main class="grid">
+    Hello Positivus
+  </main>
+  <script src="./js/app.js"></script>
 </body>
 </html>
