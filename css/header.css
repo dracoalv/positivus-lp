@@ -42,6 +42,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 24px 0;
+  }
+
   .logotype {
     width: 144px;
   }
