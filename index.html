@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <script src="./js/web-components.js"></script>
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/grid.css">
@@ -39,7 +40,7 @@
           <p>Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
           <button class="button light-secondary">Book a consultation</button>
         </div>
-        <div class="speaker-illustration-container" data-svg="speaker-illustration-container"></div>
+        <dynamic-svg src="./assets/speaker-illustration.svg" class="speaker-illustration" />
       </div>
       <div class="logotypes-partners">
         <img src="./assets/amazon-logo.svg" alt="Logotype of amazon company">
@@ -48,6 +49,111 @@
         <img src="./assets/notion-logo.svg" alt="Logotype of x company">
         <img src="./assets/netflix-logo.svg" alt="Logotype of x company">
         <img src="./assets/zoom-logo.svg" alt="Logotype of x company">
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <div class="text">
+        <h2 class="label secondary-primary">Services</h2>
+        <p>At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</p>
+      </div>
+      <div class="services-card-container">
+        <div class="card terciary">
+          <div class="text">
+            <div class="labels">
+              <h3 class="label secondary-primary">Search engine</h3>
+              <h3 class="label secondary-primary">optimization</h3>
+              <h3 class="label secondary-primary">(SEO)</h3>
+            </div>
+            <a href="#" class="component-link">
+              Learn more
+              <dynamic-svg src="./assets/positivus-arrow.svg" class="component-link primary-secondary" />
+            </a>
+          </div>
+          <div>
+            <img src="./assets/images/seo-illustration.png" alt="SEO illustration">
+          </div>
+        </div>
+        <div class="card primary">
+          <div class="text">
+            <div class="labels">
+              <h3 class="label secondary-primary">Pay-per-click</h3>
+              <h3 class="label secondary-primary">optimization</h3>
+              <h3 class="label secondary-primary">(SEO)</h3>
+            </div>
+            <a href="#" class="component-link">
+              Learn more
+              <dynamic-svg src="./assets/positivus-arrow.svg" class="component-link primary-secondary" />
+            </a>
+          </div>
+          <div>
+            <img src="./assets/images/pay-illustration.png" alt="Pay illustration">
+          </div>
+        </div>
+        <div class="card secondary">
+          <div class="text">
+            <div class="labels">
+              <h3 class="label secondary-primary">Search engine</h3>
+              <h3 class="label secondary-primary">optimization</h3>
+              <h3 class="label secondary-primary">(SEO)</h3>
+            </div>
+            <a href="#" class="component-link light">
+              Learn more
+              <dynamic-svg src="./assets/positivus-arrow.svg" class="component-link secondary-light" />
+            </a>
+          </div>
+          <div>
+            <img src="./assets/images/social-illustration.png" alt="Social illustration">
+          </div>
+        </div>
+        <div class="card terciary">
+          <div class="text">
+            <div class="labels">
+              <h3 class="label secondary-primary">Search engine</h3>
+              <h3 class="label secondary-primary">optimization</h3>
+              <h3 class="label secondary-primary">(SEO)</h3>
+            </div>
+            <a href="#" class="component-link">
+              Learn more
+              <dynamic-svg src="./assets/positivus-arrow.svg" class="component-link primary-secondary" />
+            </a>
+          </div>
+          <div>
+            <img src="./assets/images/email-illustration.png" alt="Email illustration">
+          </div>
+        </div>
+        <div class="card primary">
+          <div class="text">
+            <div class="labels">
+              <h3 class="label secondary-primary">Search engine</h3>
+              <h3 class="label secondary-primary">optimization</h3>
+              <h3 class="label secondary-primary">(SEO)</h3>
+            </div>
+            <a href="#" class="component-link">
+              Learn more
+              <dynamic-svg src="./assets/positivus-arrow.svg" class="component-link primary-secondary" />
+            </a>
+          </div>
+          <div>
+            <img src="./assets/images/content-illustration.png" alt="Content illustration">
+          </div>
+        </div>
+        <div class="card secondary">
+          <div class="text">
+            <div class="labels">
+              <h3 class="label secondary-primary">Search engine</h3>
+              <h3 class="label secondary-primary">optimization</h3>
+              <h3 class="label secondary-primary">(SEO)</h3>
+            </div>
+            <a href="#" class="component-link light">
+              Learn more
+              <dynamic-svg src="./assets/positivus-arrow.svg" class="component-link secondary-light" />
+            </a>
+          </div>
+          <div>
+            <img src="./assets/images/analytics-illustration.png" alt="Analytics illustration">
+          </div>
+        </div>
       </div>
     </section>
   </main>

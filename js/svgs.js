@@ -1,8 +1,7 @@
 function speakerDynamicSVG() {
-  const rootStyles = getComputedStyle(document.documentElement)
-  
-  const primaryColor = rootStyles.getPropertyValue('--primary-color').trim();
-  const secondaryColor = rootStyles.getPropertyValue('--secondary-color').trim();
+  const rootStyles = getComputedStyle(document.documentElement)  
+  const primaryColor = rootStyles.getPropertyValue('--primary-color').trim()
+  const secondaryColor = rootStyles.getPropertyValue('--secondary-color').trim()
 
   const svgContent = `
     <svg width="600" viewBox="0 0 600 515" fill="none" xmlns="http://www.w3.org/2000/svg">

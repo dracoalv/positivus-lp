@@ -25,59 +25,44 @@
 .component-link {
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
   gap: 16px;
-}
 
-.component-link.primary-light > svg circle {
-  fill: var(--light-color);
-}
+  width: fit-content;
 
-.component-link.primary-light > svg path {
-  fill: var(--primary-color);
-}
+  &.light {
+    color: var(--light-color);
+  }
 
-.component-link.primary-dark > svg circle {
-  fill: var(--secondary-color);
-}
+  &.primary-light {
+    --svg-path-color: var(--primary-color); 
+    --svg-circle-color: var(--light-color); 
+  }
 
-.component-link.primary-dark > svg path {
-  fill: var(--primary-color);
-}
+  &.primary-secondary  {
+    --svg-path-color: var(--primary-color); 
+    --svg-circle-color: var(--secondary-color); 
+  }
 
-/* ### */
+  &.secondary-light  {
+    --svg-path-color: var(--secondary-color); 
+    --svg-circle-color: var(--light-color); 
+  }
 
-.component-link.secondary-white > svg circle {
-  fill: var(--light-color);
-}
+  &.light-secondary {
+    --svg-path-color: var(--light-color); 
+    --svg-circle-color: var(--secondary-color); 
+  }
 
-.component-link.secondary-white > svg path {
-  fill: var(--secondary-color);
-}
+  &.secondary-primary {
+    --svg-path-color: var(--secondary-color); 
+    --svg-circle-color: var(--primary-color); 
+  }
 
-.component-link.light-secondary > svg circle {
-  fill: var(--secondary-color);
-}
-
-.component-link.light-secondary > svg path {
-  fill: var(--light-color);
-}
-
-/* ### */
-
-.component-link.secondary-primary > svg circle {
-  fill: var(--primary-color);
-}
-
-.component-link.secondary-primary > svg path {
-  fill: var(--secondary-color);
-}
-
-.component-link.light-primary > svg circle {
-  fill: var(--primary-color);
-}
-
-.component-link.light-primary > svg path {
-  fill: var(--light-color);
+  &.light-primary {
+    --svg-path-color: var(--light-color); 
+    --svg-circle-color: var(--primary-color); 
+  }
 }
 
 /* ### */
@@ -85,14 +70,13 @@
 .component-link-simple {
   display: flex;
   align-items: center;
-  gap: 16px;
   flex-direction: row-reverse;
-}
+  gap: 16px;
 
-.component-link-simple.primary,
-.component-link-simple.primary svg path {
-  color: var(--primary-color);
-  fill: var(--primary-color);
+  &.primary {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+  }
 }
 
 .component-link-simple.secondary,
@@ -147,19 +131,30 @@ button {
 h2.label {
   padding: 2px 8px;
   border-radius: 7px;
+  width: fit-content;
+  border-radius: 8px;
 }
 
-h2.label.secondary-primary {
+h3.label {
+  padding: 0px 6px;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+h2.label.secondary-primary,
+h3.label.secondary-primary {
   color: var(--secondary-color);
   background-color: var(--primary-color);
 }
 
-h2.label.secondary-light {
+h2.label.secondary-light,
+h3.label.secondary-light {
   color: var(--secondary-color);
   background-color: var(--light-color);
 }
 
-h2.label.light-secondary {
+h2.label.light-secondary,
+h3.label.light-secondary {
   color: var(--light-color);
   background-color: var(--secondary-color);
 }
