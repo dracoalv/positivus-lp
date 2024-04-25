@@ -30,7 +30,7 @@
 
   width: fit-content;
 
-  &.light {
+  &.light span {
     color: var(--light-color);
   }
 

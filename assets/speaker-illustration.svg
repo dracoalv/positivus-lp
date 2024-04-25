@@ -1,4 +1,10 @@
-<svg class="speaker-illustration" width="600" height="515" viewBox="0 0 600 515" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg 
+  class="speaker-illustration" 
+  width="600" 
+  viewBox="0 0 600 515" 
+  fill="none" 
+  xmlns="http://www.w3.org/2000/svg"
+>
   <g clip-path="url(#clip0_332_1228)">
     <path d="M310.759 432.535L328.346 427.349L323.215 445L328.346 462.601L310.759 457.465L293.121 462.601L298.303 445L293.121 427.349L310.759 432.535Z" fill="var(--svg-base-color)" stroke="white" stroke-miterlimit="10"/>
   </g>

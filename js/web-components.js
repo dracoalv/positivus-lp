@@ -19,7 +19,13 @@ class DynamicSvg extends HTMLElement {
       const svgText = await response.text()
 
       this.shadowRoot.innerHTML = `
-        <div class="${className}">
+        <style>
+          .${className} {
+            width: 100%;
+            height: 100%;
+          }
+        </style>
+        <div class="dynamic-container ${className}">
           ${svgText}
         </div>
       `

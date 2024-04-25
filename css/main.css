@@ -9,6 +9,17 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+  max-width: 100%;
+  width: 100%;
+}
+
+.about-section .hero > .dynamic-container {
+  background-color: red;
+  width: 300px;
+}
+
+.about-section .hero > .dynamic-container svg {
+  width: 50%;
 }
 
 .about-section .text {
@@ -27,6 +38,7 @@
 .about-section .speaker-illustration {
   --svg-asset-color: var(--primary-color);
   --svg-base-color: var(--secondary-color);
+  width: fit-content;
 }
 
 .logotypes-partners {
@@ -112,23 +124,67 @@
   }
 }
 
-.services-card-container .card > .text {
+.services-card-container .card > .text.desktop {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
 
-.services-card-container .card > .text .labels {
-
+.services-card-container .card > .text.mobile {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
+  .services-section {
+    gap: 56px;
+  }
+
   .services-section > .text {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .services-section .services-card-container {
     grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .services-card-container .card {
+    flex-direction: column;
+    align-items: start;
+
+    & img.illustration-desktop {
+      display: none;
+    }
+  }
+
+  .services-card-container .card > .text.desktop > a {
+    display: none;
+  }
+
+  .services-card-container .card > .text.mobile {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    /* gap: 80px; */
+    width: 100%;
+    height: 100%;
+
+    & .component-link span {
+      display: none;
+    }
+
+    & img {
+      width: 165px;
+      height: 129px;
+      display: block;
+    }
+  }
+
+  .services-card-container .card {
+    padding: 32px;
   }
 }
