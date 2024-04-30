@@ -96,6 +96,7 @@
 button {
   background: transparent;
   border: 1px solid var(--secondary-color);
+  cursor: pointer;
 }
 
 .button {
@@ -107,6 +108,10 @@ button {
   color: var(--secondary-color);
 
   border-radius: 14px;
+
+  &:hover {
+    opacity: 0.95;
+  }
 }
 
 .button.secondary-primary {
@@ -119,11 +124,6 @@ button {
   color: var(--light-color);
   background-color: var(--secondary-color);
   border: none;
-}
-
-.button.secondary-transparent {
-  color: var(--secondary-color);
-  background-color: transparent;
 }
 
 /* ### */
